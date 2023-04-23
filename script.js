@@ -87,7 +87,7 @@ submitButton.addEventListener("click", () => {
         requestAnimationFrame(()=>{
             submitButton.style.animation = "shake 0.8s cubic-bezier(.36,.07,.19,.97) both"
         });
-        // return; 
+        return; 
     }
     // container.style.transform = "translateX(-250px)"
     container.style.transform = containerTranslate
