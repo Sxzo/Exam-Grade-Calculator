@@ -1,3 +1,21 @@
+// Get the viewport width
+let viewportWidth = window.innerWidth;
+
+// Define the media query
+let mediaQuery = window.matchMedia("(max-width: 600px)");
+
+containerTranslate = "translateX(-250px)"
+resultTranslate = "translateX(400px)"
+
+if (mediaQuery.matches) {
+    containerTranslate ="translateY(-250px)"
+    resultTranslate = "translateY(500px) translateX(-125px)"
+}
+
+
+
+
+
 submitButton = document.querySelector(".submit-button")
 currentGradeInput = document.querySelector(".grade-input")
 targetGradeInput = document.querySelector(".target-input")
@@ -71,10 +89,12 @@ submitButton.addEventListener("click", () => {
         });
         return; 
     }
-    container.style.transform = "translateX(-250px)"
+    // container.style.transform = "translateX(-250px)"
+    container.style.transform = containerTranslate
     resultSection.style.display = "inline-block"
     requestAnimationFrame(()=>{ 
-        resultSection.style.transform = "translateX(400px)"
+        // resultSection.style.transform = "translateX(400px)"
+        resultSection.style.transform = resultTranslate
     });
 
     outputCurrentGrade.innerHTML = Number(currentGradeInput.value).toFixed(2)

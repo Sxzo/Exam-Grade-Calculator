@@ -185,6 +185,15 @@ body {
     }
   }
 
+  @media screen and (max-width: 600px) {
+    body {
+        scale: 75%;
+    }
+    .result {
+        transform: translateX(-125px);
+    }
+  }
+
 
 
 
