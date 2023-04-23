@@ -8,7 +8,7 @@ containerTranslate = "translateX(-250px)"
 resultTranslate = "translateX(400px)"
 
 if (mediaQuery.matches) {
-    containerTranslate ="translateY(-250px)"
+    containerTranslate ="translateY(-200px)"
     resultTranslate = "translateY(500px) translateX(-125px)"
 }
 
@@ -87,7 +87,7 @@ submitButton.addEventListener("click", () => {
         requestAnimationFrame(()=>{
             submitButton.style.animation = "shake 0.8s cubic-bezier(.36,.07,.19,.97) both"
         });
-        return; 
+        // return; 
     }
     // container.style.transform = "translateX(-250px)"
     container.style.transform = containerTranslate
