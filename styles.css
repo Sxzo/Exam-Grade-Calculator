@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Oxygen'; */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    
+    
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aliceblue; */
+    overflow: none;
+    background: #4568DC;  
+    background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  
+    background: linear-gradient(to right, #B06AB3, #4568DC); 
+
+}
+
+.result {
+    position: absolute;
+    display: none;
+    transition: all 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transform: translateX(-140px);
+    /* transition: all 0.3s ease-in; */
+}
+
+
+.result-grade {
+    text-align: center;
+    vertical-align: center;
+    position: relative;
+    width: 350px;
+    height: 125px;
+    transform: translateX(145px) translateY(-75px);
+    font-size: 100px;
+    color: #fff;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.result-subheader {
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transform: translateX(115px) translateY(0px);
+    width: 400px;
+    font-size: 20px;
+} 
+
+
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    /* padding: 28px 32px; */
+    width: 500px;
+    height: 600px;
+    background: #fff;
+    box-shadow: 0 0 1000px rgba(0, 0, 0, 0.326);
+    border-radius: 10px;
+    transition: all 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    
+}
+
+.container-name {
+    position: absolute;
+    transform: translateY(-225px);
+    user-select: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: #4e4e4efa;
+}
+
+.submit-button {
+    cursor: pointer;
+    position: absolute;
+    transform: translateY(225px);
+    font-size: 17px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 125px;
+    height: 30px;
+    background: linear-gradient(90deg, #4dda83, transparent) #1ac768;
+    /* background: linear-gradient(to right, #B06AB3, #4568DC);  */
+    box-shadow: 0px 0px 5px 1px #c2c2c2;
+    /* transition: all 0.1s ease-in; */
+    place-content: center;
+}
+
+.submit-button:hover { 
+    background: #3cd677;
+}
+
+.grade-input, .target-input, .weight-input {
+    text-align: center;
+    background: none;
+    place-content: center;
+    height: 32px;
+    width: 80px;
+    border: 2px solid #8d8d8dfa;
+    /* border: 2px solid #ff8a8a; */
+    border-radius: 5px;
+    /* border-bottom: 3px solid #b4b4b4;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px; */
+    font-weight: bold;
+    color: #4e4e4efa;
+    font-size: 17.5px;
+    transform: translateX(25px);
+    background: #ffffff8e;
+    
+}
+.grade-input:focus, .target-input:focus, .weight-input:focus {
+    box-shadow: 0px 0px 5px 1px #dadada;
+}
+
+.target-input-h, .grade-input-h, .weight-input-h {
+    white-space: nowrap;
+    position: relative;
+    width: 500px;
+    height: 50px;
+    font-weight: bold;
+    color: #4e4e4efa;
+    font-size: 20px;
+}
+
+/* BEFORE: */
+.grade-input-h {
+    transform: translateY(-100px) translateX(264px);
+}
+
+.target-input-h {
+    transform: translateX(0px);
+}
+
+.weight-input-h {
+    transform: translateY(100px) translateX(-264px);
+}
+
+/* .grade-input-h {
+    transform: translateY(-100px) translateX(445px);
+}
+
+.target-input-h {
+    transform: translateX(180px);
+}
+
+.weight-input-h {
+    transform: translateY(100px) translateX(-85px);
+} */
+
+@keyframes shake {
+    10%, 90% {
+      transform: translateX(-1px) translateY(225px);
+    }
+    
+    20%, 80% {
+      transform: translateX(2px) translateY(225px);
+    }
+  
+    30%, 50%, 70% {
+      transform: translateX(-4px) translateY(225px);
+    }
+  
+    40%, 60% {
+      transform: translateX(4px) translateY(225px);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
