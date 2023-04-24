@@ -21,7 +21,7 @@ body {
     /* background-color: aliceblue; */
     overflow: none;
     background: #4568DC;  
-    background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  
+    background: -webkit-linear-gradient(to right, rgb(176, 106, 179), rgb(69, 104, 220));  
     background: linear-gradient(to right, #B06AB3, #4568DC); 
 
 }
