@@ -8,7 +8,7 @@ containerTranslate = "translateX(-250px)"
 resultTranslate = "translateX(400px)"
 
 if (mediaQuery.matches) {
-    containerTranslate ="translateY(-200px)"
+    containerTranslate ="translateY(-175px)"
     resultTranslate = "translateY(500px) translateX(-125px)"
 }
 

@@ -109,6 +109,22 @@ body {
     background: #3cd677;
 }
 
+.exit-button {
+    cursor: pointer;
+    position: absolute;
+    transform: translateY(225px) translateX(150px);
+    font-size: 17px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 125px;
+    height: 30px;
+    color: red;
+    /* background: linear-gradient(to right, #B06AB3, #4568DC);  */
+    /* transition: all 0.1s ease-in; */
+    place-content: center;
+}
+
 .grade-input, .target-input, .weight-input {
     text-align: center;
     background: none;
